@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+# fs.s3.awsAccessKeyId=s6XZuf8L6MionO98
+# fs.s3.awsSecretAccessKey=8eNO6xllV11ouBnW
+# fs.s3a.endpoint=s3.us.archive.org
+# s3service.s3-endpoint=s3.us.archive.org
+-->
+
+<configuration>
+
+    <property>
+        <name>hadoop.home.dir</name>
+        <value>/mnt/data/home/mdupont/experiments/hadoop_ws/hadoop/</value>
+    </property>
+
+    <property>
+      <name>s3service.https-only</name>
+      <value>False</value>
+    </property>
+   
+    <property>
+      <name>httpclient.useragent</name>
+      <value>thisisatest</value>
+    </property>
+
+    <property>
+        <name>fs.s3.awsAccessKeyId</name>
+        <value>s6XZuf8L6MionO98</value>
+    </property>
+
+    <property>
+        <name>fs.s3.awsSecretAccessKey</name>
+        <value>8eNO6xllV11ouBnW</value>
+    </property>
+
+    <property>
+        <name>fs.s3a.access.key</name>
+        <value>s6XZuf8L6MionO98</value>
+    </property>
+
+    <property>
+        <name>fs.s3a.secret.key</name>
+        <value>8eNO6xllV11ouBnW</value>
+    </property>
+    
+    <property>
+      <name>fs.s3a.endpoint</name>
+      <description>archive</description>
+      <value>s3.us.archive.org</value>
+    </property>
+
+    <property>
+      <name>s3service.s3-endpoint</name>
+      <description>archive.org</description>
+      <value>s3.us.archive.org</value>
+    </property>
+
+</configuration>
