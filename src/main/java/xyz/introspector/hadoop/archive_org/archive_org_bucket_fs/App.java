@@ -55,7 +55,10 @@ public class App
 		    fs.initialize(U, conf);
 		    boolean recursive=false;
 		    Path p = new Path("/");
-			fs.listFiles(p, recursive);
+                    fs.listFiles(p, recursive);
+			Path dst = new Path("/tmp/test.txt");
+			Path src = new Path("/___github_projects_t_000000_0.data");
+			fs.copyToLocalFile(src, dst);
 			fs.close();
 		    
 		} catch (IOException e) {
