@@ -30,10 +30,10 @@ public class App
 	
     public static void main( String[] args )
     {     
-    	//System.setProperty("org.apache.commons.logging.diagnostics.dest", "STDOUT");
-    	//System.setProperty("log4j.rootCategory","DEBUG");
-    	//System.setProperty("log4j.rootLogger","DEBUG");
-    	//log.setLevel(Level.TRACE);
+    	System.setProperty("org.apache.commons.logging.diagnostics.dest", "STDOUT");
+    	System.setProperty("log4j.rootCategory","debug,stdout");
+    	System.setProperty("log4j.rootLogger","DEBUG");
+    	
     
         System.out.println( "Hello World!" );
         S3Credentials s3Credentials = new S3Credentials();
